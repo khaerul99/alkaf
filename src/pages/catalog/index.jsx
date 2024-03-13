@@ -55,7 +55,7 @@ function Catalog() {
             </p>
           </div>
           <div className="py-5">
-            <div className="flex items-center gap-4">
+            <div className="flex flex-wrap items-center gap-4">
               <button
                 onClick={() => setIsActiveTab("semua")}
                 className={`px-4 py-1 transition-all duration-200 ${
@@ -98,7 +98,7 @@ function Catalog() {
               </button>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5 px-14 lg:px-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5 px-12 md:px-0  lg:px-5">
             {filteredProducts &&
               filteredProducts.map((e) => (
                 <CardProduct name={e.name} img={e.img} />
@@ -113,7 +113,7 @@ function Catalog() {
 const CardProduct = ({ name, img }) => {
   return (
     <div className="">
-      <div className="h-[320px] w-[231px] rounded-md overflow-hidden">
+      <div className="h-[320px] w-[256px] lg:w-[231px] rounded-md overflow-hidden">
         <img src={img} alt="" className="h-full w-full object-cover" />
       </div>
       <h1 className="text-[14px] font-medium">{name}</h1>

@@ -1,42 +1,14 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../../layout";
 import { Carousel } from "@material-tailwind/react";
+import { dataProduct } from "../../data/datas";
 
 function Catalog() {
   const [isActiveTab, setIsActiveTab] = useState("semua");
-  const dataProduct = [
-    {
-      name: "kaos kurta",
-      kategori: "kaos",
-      img: "/assets/image/image8.jpg",
-    },
-    {
-      name: "kaos kurta",
-      kategori: "kaos",
-      img: "/assets/image/image8.jpg",
-    },
-    {
-      name: "celana panjang",
-      kategori: "celana",
-      img: "/assets/image/image9.jpg",
-    },
-    {
-      name: "celana panjang",
-      kategori: "celana",
-      img: "/assets/image/image9.jpg",
-    },
-    {
-      name: "gamis kurta",
-      kategori: "gamis",
-      img: "/assets/image/image6.jpg",
-    },
-    {
-      name: "gamis kurta",
-      kategori: "gamis",
-      img: "/assets/image/image6.jpg",
-    },
-  ];
-  const filteredProducts = dataProduct.filter((product) => {
+
+
+  const Products = dataProduct;
+  const filteredProducts = Products.filter((product) => {
     return isActiveTab === "semua" || product.kategori === isActiveTab;
   });
 

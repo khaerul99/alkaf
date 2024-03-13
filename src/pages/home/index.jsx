@@ -14,8 +14,8 @@ function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2">
             <div>
               <div>
-                <h1 className="font-bold text-[32px] sm:text-[55px] text-white">
-                  KOKO SHIFT WITH THE BEST QUALITY COTTON
+                <h1 className="font-bold text-[32px] sm:text-[50px] text-white">
+                  Inspirasi Islami untuk Gaya Sehari-hari Anda!
                 </h1>
                 <p className="w-9/12 text-gray-500 py-6">
                   from rich and bold to smooth and mild, we have a wide
@@ -51,8 +51,8 @@ function Home() {
 
         <div className="px-[20px] md:px-[80px] py-[80px]">
           <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-            <h1 className="font-semibold text-[32px] md:text-[40px] md:p-5">
-              Stunning Selection Of Premium Cotton Fabric
+            <h1 className="font-semibold text-[32px] md:text-[35px] ">
+              Pilihan Kain Katun Premium yang Menakjubkan
             </h1>
             <p className="md:p-5 text-gray-500">
               Find your perfect brew from our collection of single origin,
@@ -61,7 +61,10 @@ function Home() {
           </div>
 
           <div className="flex justify-center py-5 lg:hidden">
-            <div className="  h-[300px] w-[300px] flex justify-center" data-aos="fade-right" >
+            <div
+              className="  h-[300px] w-[300px] flex justify-center"
+              data-aos="fade-right"
+            >
               <img src="/assets/image/image1.png" alt="" className="h-full " />
             </div>
           </div>
@@ -193,11 +196,10 @@ function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 py-5">
             <div>
               <p className="text-gray-500">
-                Discover the love and passion we have for coffee in every is our
-                "Love from the Galerry" collection of premium beans handpicke
-                from the finest growers around the world. Indulge in the ricch
-                aroma and taste of freshly roasted coffee, crafted to perfection
-                for your enjoyment.
+                Hadapi Tantangan Hidup dengan Gaya Islami yang Inspiratif dan
+                Berkah! Dengan Koleksi Baju Islami Kami, Anda Bukan Hanya
+                Memperlihatkan Gaya, Tetapi Juga Menginspirasi dan Menyebarkan
+                Kebaikan ke Seluruh Dunia.
               </p>
             </div>
             <div className="flex justify-center items-center mt-10 lg:mt-0">

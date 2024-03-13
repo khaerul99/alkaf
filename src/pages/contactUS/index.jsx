@@ -11,10 +11,10 @@ function ContactUs() {
                         <p>Any question or remarks? Just write us a message!</p>
                     </div>
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-2'>
-                        <div className='bg-[#F8F0E5] px-5 md:px-10 py-5 rounded-md'>
+                        <div className='bg-gray-200 px-5 md:px-10 py-5 rounded-md'>
                             <div className='flex flex-col gap-4'>
                                 <div>
-                                    <h1 className='font-bold text-[32px] text-[#662549]'>Contact Information</h1>
+                                    <h1 className='font-bold text-[32px] text-black'>Contact Information</h1>
                                     <p>Should you have any question or concern, you can reach us by filling out the contact form, calling us, coming to our office,  finding us on other social networks, or you can personal email us at :</p>
                                 </div>
                                 <div className='flex items-center gap-3'>

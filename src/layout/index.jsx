@@ -7,7 +7,7 @@ function Layout({ children }) {
         <section className='flex justify-center scroll-smooth '>
             <div className='w-full max-w-7xl'>
                 <Navbar />
-                <div className='w-full z-0 mt-7 lg:mt-16'>
+                <div className='w-full z-0 mt-16'>
                     {children}
                 </div>
                 <div className='px-[20px] md:px-[80px] py-[50px] bg-[#272829]'>

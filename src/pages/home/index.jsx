@@ -60,6 +60,12 @@ function Home() {
             </p>
           </div>
 
+          <div className="flex justify-center py-5 lg:hidden">
+            <div className="  h-[300px] w-[300px] flex justify-center" data-aos="fade-right" >
+              <img src="/assets/image/image1.png" alt="" className="h-full " />
+            </div>
+          </div>
+
           <div className="w-full mt-10 flex flex-col gap-10 relative">
             <div
               className="hidden lg:block absolute h-[300px] w-[300px] overflow-hidden top-16 -left-20"

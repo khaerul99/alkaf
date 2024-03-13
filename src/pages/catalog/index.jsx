@@ -53,44 +53,89 @@ function Catalog() {
   return (
     <Layout>
       <section>
-        <div>
-          <Swiper
-            spaceBetween={30}
-            centeredSlides={true}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            pagination={{
-              clickable: true,
-            }}
-            navigation={true}
-            modules={[Autoplay, Pagination, Navigation]}
-            className="mySwiper mt-14"
+        <div className="">
+          <div
+            id="controls-carousel"
+            className="relative w-full"
+            data-carousel="static"
           >
-            <SwiperSlide>
+            {/* <!-- Carousel wrapper --> */}
+            <div className="relative h-56 overflow-hidden rounded-lg md:h-[400px]">
+              {/* <!-- Item 1 --> */}
               <div
-                className="px-[20px] md:px-[80px] py-[80px] w-full h-[500px] relative flex items-center "
-                style={{
-                  backgroundImage: "url(/assets/image/banner1.jpg)",
-                  backgroundSize: "cover",
-                }}
+                className="hidden duration-700 ease-in-out"
+                data-carousel-item
               >
-               
+                <img
+                  src="/assets/image/banner1.jpg"
+                  className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
               </div>
-            </SwiperSlide>
-            <SwiperSlide>
               <div
-                className=" w-full h-[500px]">
-                <img src="/assets/image/banner2.jpg" alt=""  className="object-cover h-full w-full" />
-                
+                className="hidden duration-700 ease-in-out"
+                data-carousel-item
+              >
+                <img
+                  src="/assets/image/banner2.jpg"
+                  className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
               </div>
-            </SwiperSlide>
-           
-          </Swiper>
+            </div>
+            {/* <!-- Slider controls --> */}
+            <button
+              type="button"
+              className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-prev
+            >
+              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg
+                  className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M5 1 1 5l4 4"
+                  />
+                </svg>
+                <span className="sr-only">Previous</span>
+              </span>
+            </button>
+            <button
+              type="button"
+              className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-next
+            >
+              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg
+                  className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 6 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 9 4-4-4-4"
+                  />
+                </svg>
+                <span className="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
         </div>
 
-        <section className="py-20 p-5">
+        <section className="py-10 p-5">
           <div>
             <h1>PRODUCTS</h1>
             <p>
@@ -103,7 +148,9 @@ function Catalog() {
               <button
                 onClick={() => setIsActiveTab("semua")}
                 className={`px-4 py-1 transition-all duration-200 ${
-                  isActiveTab === "semua" ?"bg-black text-white border border-black" : "border border-black text-black"
+                  isActiveTab === "semua"
+                    ? "bg-black text-white border border-black"
+                    : "border border-black text-black"
                 }`}
               >
                 semua
@@ -111,7 +158,9 @@ function Catalog() {
               <button
                 onClick={() => setIsActiveTab("celana")}
                 className={`px-4 py-1 transition-all duration-200 ${
-                  isActiveTab === "celana" ? "bg-black text-white border border-black" : "border border-black text-black"
+                  isActiveTab === "celana"
+                    ? "bg-black text-white border border-black"
+                    : "border border-black text-black"
                 }`}
               >
                 celana
@@ -119,7 +168,9 @@ function Catalog() {
               <button
                 onClick={() => setIsActiveTab("kaos")}
                 className={`px-4 py-1 transition-all duration-200 ${
-                  isActiveTab === "kaos" ? "bg-black text-white border border-black" : "border border-black text-black"
+                  isActiveTab === "kaos"
+                    ? "bg-black text-white border border-black"
+                    : "border border-black text-black"
                 }`}
               >
                 kaos
@@ -127,14 +178,16 @@ function Catalog() {
               <button
                 onClick={() => setIsActiveTab("gamis")}
                 className={`px-4 py-1 transition-all duration-200 ${
-                  isActiveTab === "gamis" ? "bg-black text-white border border-black" : "border border-black text-black"
+                  isActiveTab === "gamis"
+                    ? "bg-black text-white border border-black"
+                    : "border border-black text-black"
                 }`}
               >
                 koko / gamis
               </button>
             </div>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-5 px-14 lg:px-5">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5 px-14 lg:px-5">
             {filteredProducts &&
               filteredProducts.map((e) => (
                 <CardProduct name={e.name} img={e.img} />

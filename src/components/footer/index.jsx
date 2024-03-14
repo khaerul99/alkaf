@@ -20,7 +20,6 @@ function Footer() {
                     <div className='flex flex-col gap-5'>
                         <Link className='font-medium'>Home</Link>
                         <Link className='font-medium'>Catalog</Link>
-                        <Link className='font-medium'>Shop</Link>
                         <Link className='font-medium'>About Us</Link>
                         <Link className='font-medium'>Contact Us</Link>
                     </div>

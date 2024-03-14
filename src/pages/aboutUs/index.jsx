@@ -78,7 +78,7 @@ function AboutUS() {
               Alkaf News
             </h2>
             <h2 className="font-bold text-[32px] relative ">Alkaf News</h2>
-            <p className="">Get the latest updates from Fore Coffee</p>
+            <p className="">Gaya Islami yang Menginspirasi, Kualitas Terbaik yang Mengagumkan</p>
           </div>
           <div className="py-10">
             {/* card */}

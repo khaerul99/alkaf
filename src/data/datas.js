@@ -10,6 +10,11 @@ export const dataProduct = [
       img: "/assets/image/image8.jpg",
     },
     {
+      name: "kaos kurta",
+      kategori: "kaos",
+      img: "/assets/image/image12.jpg",
+    },
+    {
       name: "celana panjang",
       kategori: "celana",
       img: "/assets/image/image9.jpg",
@@ -18,6 +23,16 @@ export const dataProduct = [
       name: "celana panjang",
       kategori: "celana",
       img: "/assets/image/image9.jpg",
+    },
+    {
+      name: "celana panjang",
+      kategori: "celana",
+      img: "/assets/image/image13.jpg",
+    },
+    {
+      name: "gamis kurta",
+      kategori: "gamis",
+      img: "/assets/image/image5.jpg",
     },
     {
       name: "gamis kurta",
@@ -27,7 +42,7 @@ export const dataProduct = [
     {
       name: "gamis kurta",
       kategori: "gamis",
-      img: "/assets/image/image6.jpg",
+      img: "/assets/image/image10.jpg",
     },
   ];
 

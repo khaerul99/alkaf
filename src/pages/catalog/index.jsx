@@ -5,7 +5,7 @@ import { dataProduct } from "../../data/datas";
 
 function Catalog() {
   const [isActiveTab, setIsActiveTab] = useState("semua");
-
+ 
 
   const Products = dataProduct;
   const filteredProducts = Products.filter((product) => {
@@ -18,6 +18,9 @@ function Catalog() {
         <div className="">
           <Carousel
             className="lg:h-[500px]"
+            autoplay
+            infiniteLoop
+            interval={3000}
             navigation={({ setActiveIndex, activeIndex, length }) => (
               <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
                 {new Array(length).fill("").map((_, i) => (
@@ -42,7 +45,6 @@ function Catalog() {
               alt="image 1"
               className="h-full w-full object-cover"
             />
-           
           </Carousel>
         </div>
 
@@ -98,11 +100,13 @@ function Catalog() {
               </button>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5 px-12 md:px-0  lg:px-5">
-            {filteredProducts &&
-              filteredProducts.map((e) => (
-                <CardProduct name={e.name} img={e.img} />
-              ))}
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5 ">
+              {filteredProducts &&
+                filteredProducts.map((e) => (
+                  <CardProduct name={e.name} img={e.img} />
+                ))}
+            </div>
           </div>
         </section>
       </section>

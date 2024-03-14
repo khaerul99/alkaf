@@ -229,7 +229,7 @@ function Home() {
         <div className="px-[20px] md:px-[80px] py-[80px]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <div className="flex flex-col gap-5">
-              <h1 className="font-bold text-[36px]">
+              <h1 className="font-bold text-[26px] lg:text-[34px]">
                 join us to become a partner at alkaf.store
               </h1>
               <p className="text-gray-400">
